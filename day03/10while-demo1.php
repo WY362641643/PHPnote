@@ -6,15 +6,18 @@
 </head>
 <body>
 <?php 
-//错误抑制符
 
-if(@mysqli_connect('localhost','root','1234'))
+//求7到17的和。
+$n = 7;
+$sum = 0;
+while ( $n <= 17)
 {
-	echo "成功！";
+	//$sum = $sum + $n;	//好low
+	$sum += $n;
+	$n++;
 }
-else{
-	echo "连接失败";
-}
+
+echo "和为$sum";
 
  ?>
 </body>

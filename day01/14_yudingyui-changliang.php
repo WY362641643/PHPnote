@@ -9,10 +9,12 @@
 </head>
 <body>
 <?php
-// 输出1-100
-for($s=1;$s<=100; ++$s){
-    echo '<br>值为',$s;
-}
+echo '最大整数: ', PHP_INT_MAX;
+echo '<br>圆周率pi为: ',M_PI;
+echo '<br>当前网页所在路径',__DIR__;
+echo '<br>当前网页文件路径',__FILE__;
+echo '<br>当前这一行的行号',__LINE__;
 ?>
+
 </body>
 </html>
